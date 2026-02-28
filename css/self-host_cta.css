@@ -1,0 +1,26 @@
+/* ─── SELF-HOST CTA ─────────────────────────── */
+    .selfhost { padding: 80px 24px; }
+    .selfhost-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 64px; overflow: hidden;
+      position: relative;
+    }
+    .selfhost-card::before {
+      content: '';
+      position: absolute; inset: 0; pointer-events: none;
+      background: radial-gradient(ellipse 60% 60% at 100% 0%, rgba(94,96,206,0.1), transparent);
+    }
+    .selfhost-inner {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+      position: relative; z-index: 1;
+    }
+    .selfhost-title { font-size: clamp(24px, 3vw, 36px); font-weight: 800; letter-spacing: -0.03em; line-height: 1.2; }
+    .selfhost-sub { font-size: 16px; color: var(--text-2); margin-top: 14px; line-height: 1.7; }
+    .selfhost-actions { display: flex; gap: 10px; margin-top: 28px; flex-wrap: wrap; }
+    .selfhost-code .code-block { border-color: rgba(94,96,206,0.2); }
+    @media (max-width: 768px) {
+      .selfhost-card { padding: 36px 24px; }
+      .selfhost-inner { grid-template-columns: 1fr; gap: 36px; }
+    }

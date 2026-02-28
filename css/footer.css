@@ -1,0 +1,38 @@
+/* ─── FOOTER ────────────────────────────────── */
+    footer {
+      padding: 48px 24px 32px;
+      border-top: 1px solid var(--border);
+    }
+    .footer-inner {
+      max-width: 1160px; margin: 0 auto;
+      display: grid; grid-template-columns: 200px 1fr; gap: 60px;
+    }
+    .footer-brand .logo-text { font-size: 16px; }
+    .footer-tagline { font-size: 13px; color: var(--text-3); margin-top: 10px; line-height: 1.6; }
+    .footer-links-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;
+    }
+    .footer-links-col h4 { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px; }
+    .footer-links-col a {
+      display: block; text-decoration: none;
+      font-size: 14px; color: var(--text-2);
+      margin-bottom: 10px; transition: color 0.2s;
+    }
+    .footer-links-col a:hover { color: var(--text); }
+    .footer-bottom {
+      max-width: 1160px; margin: 40px auto 0;
+      padding-top: 24px; border-top: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 12px;
+    }
+    .footer-copy { font-size: 13px; color: var(--text-3); }
+    .footer-badges { display: flex; gap: 8px; }
+    .footer-badge {
+      font-size: 11px; font-weight: 600; letter-spacing: 0.06em;
+      padding: 3px 10px; border-radius: 999px; text-transform: uppercase;
+      border: 1px solid var(--border); color: var(--text-3);
+    }
+    @media (max-width: 768px) {
+      .footer-inner { grid-template-columns: 1fr; gap: 40px; }
+      .footer-links-grid { grid-template-columns: repeat(2, 1fr); }
+    }

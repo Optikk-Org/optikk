@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Optikk — Full-Stack Observability Platform</title>
+  <meta name="description" content="Unified observability for distributed systems. Metrics, traces, logs, and AI-powered insights — all in one place. Self-hosted, open, and built for engineers." />
+  <meta property="og:title" content="Optikk — Full-Stack Observability Platform" />
+  <meta property="og:description" content="Unified observability for distributed systems. Metrics, traces, logs, and AI-powered insights." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/stats.css" />
+  <link rel="stylesheet" href="css/features.css" />
+  <link rel="stylesheet" href="css/tour.css" />
+  <link rel="stylesheet" href="css/videos.css" />
+  <link rel="stylesheet" href="css/sdk.css" />
+  <link rel="stylesheet" href="css/arch.css" />
+  <link rel="stylesheet" href="css/self-host_cta.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body>
+
+<!-- ─── NAV ─────────────────────────────────────── -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      </div>
+      <span class="logo-text">Optikk</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#tour">Product</a></li>
+      <li><a href="#sdk">SDKs</a></li>
+      <li><a href="#selfhost">Self-host</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#sdk" class="btn btn-ghost">Docs</a>
+      <a href="#selfhost" class="btn btn-primary">Get Started</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ─── HERO ─────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-mesh">
+    <div class="mesh-blob"></div>
+    <div class="mesh-blob"></div>
+    <div class="mesh-blob"></div>
+  </div>
+  <div class="hero-grid-lines"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow fade-in">
+      <div class="hero-eyebrow-dot"></div>
+      Full-Stack Observability Platform
+    </div>
+    <h1 class="hero-title fade-in stagger-1">
+      Observe everything.<br>
+      Miss <span class="grad">nothing.</span>
+    </h1>
+    <p class="hero-sub fade-in stagger-2">
+      Unified metrics, distributed traces, structured logs, and AI-powered insights — all in one platform. Built for engineers who need answers fast.
+    </p>
+    <div class="hero-actions fade-in stagger-3">
+      <a href="#selfhost" class="btn btn-primary btn-lg">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+        Deploy Now
+      </a>
+      <a href="#tour" class="btn btn-ghost btn-lg">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Watch Demo
+      </a>
+    </div>
+    <div class="hero-badges fade-in stagger-4">
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        OTLP Compatible
+      </div>
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        Self-hosted
+      </div>
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Real-time
+      </div>
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+        Multi-tenant
+      </div>
+    </div>
+
+    <div class="hero-screenshot-wrap fade-in stagger-5">
+      <div class="browser-chrome">
+        <div class="browser-bar">
+          <div class="browser-dots">
+            <div class="browser-dot dot-r"></div>
+            <div class="browser-dot dot-y"></div>
+            <div class="browser-dot dot-g"></div>
+          </div>
+          <div class="browser-url">app.optikk.io/overview</div>
+        </div>
+        <img
+          src="media/Screenshot%202026-02-28%20at%202.22.52%E2%80%AFPM.png"
+          alt="Optikk Overview Dashboard — SLO/SLI monitoring"
+          class="browser-screenshot"
+          loading="eager"
+        />
+      </div>
+      <div class="hero-screenshot-badge">
+        <div class="badge-dot"></div>
+        <div class="badge-text">Live — <span>99.1% availability</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── STATS ─────────────────────────────────────── -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item fade-in">
+      <div class="stat-value" data-target="5300" data-suffix="+">&lt;1ms</div>
+      <div class="stat-label">Ingest latency</div>
+      <div class="stat-sub">End-to-end from SDK to dashboard</div>
+    </div>
+    <div class="stat-item fade-in stagger-1">
+      <div class="stat-value">99.1%</div>
+      <div class="stat-label">Availability SLO</div>
+      <div class="stat-sub">Tracked in real-time with error budget</div>
+    </div>
+    <div class="stat-item fade-in stagger-2">
+      <div class="stat-value">5</div>
+      <div class="stat-label">Telemetry signals</div>
+      <div class="stat-sub">Metrics, traces, logs, SLOs, AI requests</div>
+    </div>
+    <div class="stat-item fade-in stagger-3">
+      <div class="stat-value">3</div>
+      <div class="stat-label">Native SDKs</div>
+      <div class="stat-sub">Go, Python, Java — plus any OTLP client</div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── FEATURES ─────────────────────────────────── -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="features-header">
+      <span class="tag">Capabilities</span>
+      <h2 class="section-heading">Everything your team needs to ship with confidence</h2>
+      <p class="section-sub">From raw telemetry to actionable insight — Optikk covers every layer of your stack.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card fade-in">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <div class="feature-title">Real-time Metrics</div>
+        <div class="feature-desc">Ingest, store, and query time-series metrics at scale. P50/P95/P99 latency, request rates, error budgets — all with configurable time windows.</div>
+        <span class="feature-tag">ClickHouse-backed</span>
+      </div>
+
+      <div class="feature-card fade-in stagger-1">
+        <div class="feature-icon accent">
+          <svg viewBox="0 0 24 24"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 012 2v7"/><line x1="6" y1="9" x2="6" y2="21"/></svg>
+        </div>
+        <div class="feature-title">Distributed Tracing</div>
+        <div class="feature-desc">End-to-end request tracing across services. Flame graphs, span timelines, error attribution, and service dependency topology in a single view.</div>
+        <span class="feature-tag" style="color:var(--accent);background:rgba(6,174,213,0.1)">OTLP Native</span>
+      </div>
+
+      <div class="feature-card fade-in stagger-2">
+        <div class="feature-icon success">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
+        <div class="feature-title">Log Aggregation</div>
+        <div class="feature-desc">Structured logs with full-text search, severity filtering, and trace correlation. Go from a log line to the full request trace in one click.</div>
+        <span class="feature-tag" style="color:var(--success);background:rgba(115,201,145,0.1)">Structured</span>
+      </div>
+
+      <div class="feature-card fade-in stagger-3">
+        <div class="feature-icon purple">
+          <svg viewBox="0 0 24 24"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3L9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3L14.5 2Z"/></svg>
+        </div>
+        <div class="feature-title">AI Observability</div>
+        <div class="feature-desc">First-class tracking for LLM and AI services. Monitor token usage, latency by model, cost attribution, error rates, and prompt performance over time.</div>
+        <span class="feature-tag" style="color:#9E77ED;background:rgba(158,119,237,0.1)">LLM-aware</span>
+      </div>
+
+      <div class="feature-card fade-in stagger-4">
+        <div class="feature-icon warning">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <div class="feature-title">Infrastructure Monitoring</div>
+        <div class="feature-desc">Host-level CPU, memory, disk, and network saturation. Service health checks with configurable intervals, alerting, and incident history.</div>
+        <span class="feature-tag" style="color:var(--warning);background:rgba(247,144,9,0.1)">Multi-host</span>
+      </div>
+
+      <div class="feature-card fade-in stagger-5">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 17H2a3 3 0 000 6h20a3 3 0 000-6z"/><path d="M8 9l4-6 4 6"/><path d="M12 3v14"/></svg>
+        </div>
+        <div class="feature-title">Smart Alerting</div>
+        <div class="feature-desc">Threshold and anomaly-based alerts with severity levels, acknowledgment workflows, and muting. Route to your existing on-call stack via webhooks.</div>
+        <span class="feature-tag">Multi-channel</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PRODUCT TOUR ──────────────────────────────── -->
+<section class="tour" id="tour">
+  <div class="container">
+    <div class="tour-header">
+      <span class="tag">Product Tour</span>
+      <h2 class="section-heading">Built for how engineers actually work</h2>
+      <p class="section-sub" style="margin:14px auto 0">Dark theme, dense information, zero fluff. Every screen designed to answer your question in seconds.</p>
+    </div>
+
+    <div class="tour-tabs">
+      <button class="tour-tab active" data-tab="overview">Overview &amp; SLOs</button>
+      <button class="tour-tab" data-tab="traces">Traces</button>
+      <button class="tour-tab" data-tab="services">Service Map</button>
+    </div>
+
+    <div class="tour-screens">
+      <div class="tour-screen active" data-screen="overview">
+        <div class="browser-chrome">
+          <div class="browser-bar">
+            <div class="browser-dots">
+              <div class="browser-dot dot-r"></div>
+              <div class="browser-dot dot-y"></div>
+              <div class="browser-dot dot-g"></div>
+            </div>
+            <div class="browser-url">app.optikk.io/overview</div>
+          </div>
+          <img src="media/Screenshot%202026-02-28%20at%202.22.52%E2%80%AFPM.png" alt="Overview SLO dashboard" class="browser-screenshot" />
+        </div>
+        <div class="tour-caption">
+          <h3>SLO / SLI Dashboard</h3>
+          <p>Track availability, P95 latency, and error budget remaining — at a glance, across all services.</p>
+        </div>
+      </div>
+
+      <div class="tour-screen" data-screen="traces">
+        <div class="browser-chrome">
+          <div class="browser-bar">
+            <div class="browser-dots">
+              <div class="browser-dot dot-r"></div>
+              <div class="browser-dot dot-y"></div>
+              <div class="browser-dot dot-g"></div>
+            </div>
+            <div class="browser-url">app.optikk.io/traces</div>
+          </div>
+          <img src="media/Screenshot%202026-02-28%20at%202.20.42%E2%80%AFPM.png" alt="Trace explorer" class="browser-screenshot" />
+        </div>
+        <div class="tour-caption">
+          <h3>Trace Explorer</h3>
+          <p>Filter 5K+ traces by service, status, or duration. Latency distribution histograms reveal outliers instantly.</p>
+        </div>
+      </div>
+
+      <div class="tour-screen" data-screen="services">
+        <div class="browser-chrome">
+          <div class="browser-bar">
+            <div class="browser-dots">
+              <div class="browser-dot dot-r"></div>
+              <div class="browser-dot dot-y"></div>
+              <div class="browser-dot dot-g"></div>
+            </div>
+            <div class="browser-url">app.optikk.io/services/topology</div>
+          </div>
+          <img src="media/Screenshot%202026-02-28%20at%202.20.59%E2%80%AFPM.png" alt="Service topology map" class="browser-screenshot" />
+        </div>
+        <div class="tour-caption">
+          <h3>Service Dependency Topology</h3>
+          <p>Visual graph of every service dependency with real-time error rate and health state overlaid on each node.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── VIDEOS ────────────────────────────────────── -->
+<section class="videos section-sm" id="demo">
+  <div class="container">
+    <div class="videos-header">
+      <span class="tag">Live Recordings</span>
+      <h2 class="section-heading" style="margin-top:12px">See it in action</h2>
+      <p class="section-sub">Real screen recordings from the platform — no staging environment, no fake data.</p>
+    </div>
+    <div class="video-grid">
+      <div class="video-card fade-in">
+        <video autoplay loop muted playsinline poster="media/Screenshot%202026-02-28%20at%202.22.52%E2%80%AFPM.png">
+          <source src="media/Screen%20Recording%202026-02-28%20at%202.20.02%E2%80%AFPM.mp4" type="video/mp4" />
+        </video>
+        <div class="video-label">Overview &amp; SLO monitoring</div>
+      </div>
+      <div class="video-card fade-in stagger-1">
+        <video autoplay loop muted playsinline poster="media/Screenshot%202026-02-28%20at%202.20.42%E2%80%AFPM.png">
+          <source src="media/Screen%20Recording%202026-02-28%20at%202.20.26%E2%80%AFPM.mp4" type="video/mp4" />
+        </video>
+        <div class="video-label">Trace explorer walkthrough</div>
+      </div>
+      <div class="video-card fade-in stagger-2">
+        <video autoplay loop muted playsinline poster="media/Screenshot%202026-02-28%20at%202.20.59%E2%80%AFPM.png">
+          <source src="media/Screen%20Recording%202026-02-28%20at%202.21.46%E2%80%AFPM.mp4" type="video/mp4" />
+        </video>
+        <div class="video-label">Service topology &amp; dependencies</div>
+      </div>
+      <div class="video-card fade-in stagger-3">
+        <video autoplay loop muted playsinline poster="media/Screenshot%202026-02-28%20at%202.22.52%E2%80%AFPM.png">
+          <source src="media/Screen%20Recording%202026-02-28%20at%202.23.23%E2%80%AFPM.mov" type="video/quicktime" />
+        </video>
+        <div class="video-label">Infrastructure &amp; alerting</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SDK ───────────────────────────────────────── -->
+<section class="sdk-section" id="sdk">
+  <div class="container">
+    <div class="sdk-inner">
+      <div class="sdk-info fade-in">
+        <span class="tag">Client SDKs</span>
+        <h2 class="section-heading">Instrument in minutes, not hours</h2>
+        <p class="section-sub">Native SDKs for Go, Python, and Java. Or bring your own OTLP-compatible client — Optikk speaks the standard.</p>
+        <div class="sdk-features-list">
+          <div class="sdk-feature-item">
+            <div class="sdk-feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="sdk-feature-text"><strong>Zero config tracing</strong> — automatic span propagation across HTTP and gRPC boundaries</div>
+          </div>
+          <div class="sdk-feature-item">
+            <div class="sdk-feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="sdk-feature-text"><strong>Structured log shipping</strong> — JSON logs with automatic trace correlation via span ID</div>
+          </div>
+          <div class="sdk-feature-item">
+            <div class="sdk-feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="sdk-feature-text"><strong>Custom metrics</strong> — counters, histograms, and gauges with arbitrary label dimensions</div>
+          </div>
+          <div class="sdk-feature-item">
+            <div class="sdk-feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="sdk-feature-text"><strong>AI request tracking</strong> — token counts, model names, cost attribution, and latency distributions for LLM calls</div>
+          </div>
+        </div>
+        <div class="sdk-logos">
+          <div class="sdk-logo-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06AED5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            Go
+          </div>
+          <div class="sdk-logo-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F79009" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+            Python
+          </div>
+          <div class="sdk-logo-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F04438" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3a3 3 0 00-3 3v12a3 3 0 003 3 3 3 0 003-3 3 3 0 00-3-3H6a3 3 0 00-3 3 3 3 0 003 3 3 3 0 003-3V6a3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3h12"/></svg>
+            Java
+          </div>
+          <div class="sdk-logo-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            Any OTLP
+          </div>
+        </div>
+      </div>
+
+      <div class="sdk-tabs-wrap fade-in stagger-1">
+        <div class="sdk-lang-tabs">
+          <button class="sdk-tab active" data-lang="go">go</button>
+          <button class="sdk-tab" data-lang="python">python</button>
+          <button class="sdk-tab" data-lang="java">java</button>
+        </div>
+        <div class="code-block">
+          <div class="code-header">
+            <div class="code-header-dots">
+              <span style="background:#FF5F57"></span>
+              <span style="background:#FFBD2E"></span>
+              <span style="background:#28C840"></span>
+            </div>
+            <span class="code-filename" id="sdk-filename">main.go</span>
+          </div>
+          <div class="code-body">
+            <div class="code-panel active" data-panel="go"><pre><span class="c-kw">import</span> (
+    optic <span class="c-str">"github.com/observability/optic-client-go"</span>
+)
+
+<span class="c-kw">func</span> <span class="c-fn">main</span>() {
+    <span class="c-comment">// Initialize with your API key</span>
+    client := optic.<span class="c-fn">NewClient</span>(optic.<span class="c-type">Config</span>{
+        Endpoint: <span class="c-str">"https://ingest.optikk.io/otlp"</span>,
+        APIKey:   os.<span class="c-fn">Getenv</span>(<span class="c-str">"OPTIKK_API_KEY"</span>),
+        Service:  <span class="c-str">"payment-service"</span>,
+    })
+    <span class="c-kw">defer</span> client.<span class="c-fn">Shutdown</span>(ctx)
+
+    <span class="c-comment">// Trace an HTTP handler automatically</span>
+    http.<span class="c-fn">Handle</span>(<span class="c-str">"/checkout"</span>, client.<span class="c-fn">Middleware</span>(handler))
+
+    <span class="c-comment">// Emit a custom metric</span>
+    client.Metrics.<span class="c-fn">Counter</span>(<span class="c-str">"orders.created"</span>,
+        <span class="c-num">1</span>, map[<span class="c-kw">string</span>]<span class="c-kw">string</span>{
+            <span class="c-str">"region"</span>: <span class="c-str">"us-east-1"</span>,
+        })
+}</pre></div>
+            <div class="code-panel" data-panel="python"><pre><span class="c-kw">from</span> optic_client <span class="c-kw">import</span> OpticClient, Config
+
+<span class="c-comment"># Initialize the client</span>
+client = <span class="c-fn">OpticClient</span>(<span class="c-fn">Config</span>(
+    endpoint=<span class="c-str">"https://ingest.optikk.io/otlp"</span>,
+    api_key=os.environ[<span class="c-str">"OPTIKK_API_KEY"</span>],
+    service=<span class="c-str">"ml-inference"</span>,
+))
+
+<span class="c-comment"># Decorate any function for automatic tracing</span>
+<span class="c-op">@</span>client.<span class="c-fn">trace</span>(<span class="c-str">"predict"</span>)
+<span class="c-kw">def</span> <span class="c-fn">predict</span>(features):
+    result = model.<span class="c-fn">infer</span>(features)
+    <span class="c-kw">return</span> result
+
+<span class="c-comment"># Track an AI request</span>
+<span class="c-kw">with</span> client.<span class="c-fn">ai_span</span>(model=<span class="c-str">"gpt-4o"</span>) <span class="c-kw">as</span> span:
+    resp = openai.chat.<span class="c-fn">completions</span>.<span class="c-fn">create</span>(...)
+    span.<span class="c-fn">set_tokens</span>(resp.usage.total_tokens)</pre></div>
+            <div class="code-panel" data-panel="java"><pre><span class="c-comment">// Add to pom.xml or build.gradle</span>
+OpticClient client = OpticClient.<span class="c-fn">builder</span>()
+    .<span class="c-fn">endpoint</span>(<span class="c-str">"https://ingest.optikk.io/otlp"</span>)
+    .<span class="c-fn">apiKey</span>(System.<span class="c-fn">getenv</span>(<span class="c-str">"OPTIKK_API_KEY"</span>))
+    .<span class="c-fn">serviceName</span>(<span class="c-str">"order-service"</span>)
+    .<span class="c-fn">build</span>();
+
+<span class="c-comment">// Spring Boot auto-instrumentation</span>
+<span class="c-op">@</span><span class="c-type">Bean</span>
+<span class="c-kw">public</span> OpticTracingFilter <span class="c-fn">tracingFilter</span>() {
+    <span class="c-kw">return</span> <span class="c-kw">new</span> <span class="c-fn">OpticTracingFilter</span>(client);
+}
+
+<span class="c-comment">// Manual span</span>
+<span class="c-kw">try</span> (Span span = client.<span class="c-fn">startSpan</span>(<span class="c-str">"process-order"</span>)) {
+    span.<span class="c-fn">setAttribute</span>(<span class="c-str">"order.id"</span>, orderId);
+    processOrder(orderId);
+}</pre></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ARCHITECTURE ──────────────────────────────── -->
+<section class="arch-section section-sm">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="tag">Architecture</span>
+      <h2 class="section-heading" style="margin-top:12px">Open, composable, battle-tested</h2>
+      <p class="section-sub" style="margin:14px auto 0; max-width:540px">No proprietary agents. No lock-in. Built on Go, ClickHouse, and the OpenTelemetry standard.</p>
+    </div>
+
+    <div class="arch-diagram fade-in">
+      <div class="arch-group">
+        <div class="arch-group-title">Clients</div>
+        <div class="arch-boxes">
+          <div class="arch-box">Go SDK</div>
+          <div class="arch-box">Python SDK</div>
+          <div class="arch-box">Java SDK</div>
+          <div class="arch-box" style="border-style:dashed">Any OTLP</div>
+        </div>
+      </div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-group">
+        <div class="arch-group-title">Ingest</div>
+        <div class="arch-boxes">
+          <div class="arch-box primary">Go API (Gin)</div>
+          <div class="arch-box accent" style="font-size:12px">OTLP/HTTP endpoint</div>
+          <div class="arch-box" style="border-style:dashed;font-size:12px">Kafka (optional)</div>
+        </div>
+      </div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-group">
+        <div class="arch-group-title">Storage</div>
+        <div class="arch-dbs">
+          <div class="arch-box accent">ClickHouse</div>
+          <div class="arch-box success">MySQL</div>
+        </div>
+      </div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-group">
+        <div class="arch-group-title">Frontend</div>
+        <div class="arch-boxes">
+          <div class="arch-box primary">React + Vite</div>
+          <div class="arch-box" style="font-size:12px">Ant Design 5</div>
+          <div class="arch-box" style="font-size:12px">Chart.js + Zustand</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SELF-HOST CTA ─────────────────────────────── -->
+<section class="selfhost" id="selfhost">
+  <div class="container">
+    <div class="selfhost-card fade-in">
+      <div class="selfhost-inner">
+        <div>
+          <span class="tag">Self-hosted</span>
+          <h2 class="selfhost-title">Your data. Your infra.<br>Your rules.</h2>
+          <p class="selfhost-sub">Optikk runs wherever Docker runs. No SaaS subscription, no per-seat pricing, no data leaving your network.</p>
+          <div class="selfhost-actions">
+            <a href="#" class="btn btn-primary btn-lg">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              View on GitHub
+            </a>
+            <a href="#sdk" class="btn btn-ghost btn-lg">Read the Docs</a>
+          </div>
+        </div>
+        <div class="selfhost-code">
+          <div class="code-block">
+            <div class="code-header">
+              <div class="code-header-dots">
+                <span style="background:#FF5F57"></span>
+                <span style="background:#FFBD2E"></span>
+                <span style="background:#28C840"></span>
+              </div>
+              <span class="code-filename">docker-compose.yml</span>
+            </div>
+            <div class="code-body">
+              <pre><span class="c-kw">services</span>:
+  <span class="c-fn">optikk-api</span>:
+    image: <span class="c-str">ghcr.io/optikk/backend:latest</span>
+    environment:
+      DB_HOST: mysql
+      CLICKHOUSE_HOST: clickhouse
+      JWT_SECRET: <span class="c-str">${JWT_SECRET}</span>
+    ports: [<span class="c-str">"8080:8080"</span>]
+
+  <span class="c-fn">optikk-ui</span>:
+    image: <span class="c-str">ghcr.io/optikk/frontend:latest</span>
+    ports: [<span class="c-str">"3000:80"</span>]
+
+  <span class="c-fn">mysql</span>:
+    image: <span class="c-str">mysql:8</span>
+    volumes: [<span class="c-str">mysql_data:/var/lib/mysql</span>]
+
+  <span class="c-fn">clickhouse</span>:
+    image: <span class="c-str">clickhouse/clickhouse-server:latest</span>
+    volumes: [<span class="c-str">ch_data:/var/lib/clickhouse</span>]</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo" style="text-decoration:none">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <span class="logo-text">Optikk</span>
+      </a>
+      <p class="footer-tagline">Full-stack observability for distributed systems. Built by engineers, for engineers.</p>
+    </div>
+    <div class="footer-links-grid">
+      <div class="footer-links-col">
+        <h4>Product</h4>
+        <a href="#features">Features</a>
+        <a href="#tour">Product Tour</a>
+        <a href="#demo">Demo Videos</a>
+        <a href="#selfhost">Self-host</a>
+      </div>
+      <div class="footer-links-col">
+        <h4>Developers</h4>
+        <a href="#sdk">Go SDK</a>
+        <a href="#sdk">Python SDK</a>
+        <a href="#sdk">Java SDK</a>
+        <a href="#sdk">OTLP Docs</a>
+      </div>
+      <div class="footer-links-col">
+        <h4>Platform</h4>
+        <a href="#features">Metrics</a>
+        <a href="#features">Traces</a>
+        <a href="#features">Logs</a>
+        <a href="#features">AI Observability</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Optikk. Built with Go + React.</div>
+    <div class="footer-badges">
+      <span class="footer-badge">MIT License</span>
+      <span class="footer-badge">OTLP Native</span>
+      <span class="footer-badge">Self-hosted</span>
+    </div>
+  </div>
+</footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

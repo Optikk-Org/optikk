@@ -1,0 +1,47 @@
+/* ─── FEATURES ──────────────────────────────── */
+    .features { padding: 96px 24px; }
+    .features-header { text-align: center; max-width: 640px; margin: 0 auto; }
+    .features-header .section-sub { margin: 14px auto 0; }
+    .features-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1px; background: var(--border);
+      margin-top: 60px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .feature-card {
+      background: var(--bg);
+      padding: 36px; position: relative;
+      transition: background 0.2s;
+    }
+    .feature-card:hover { background: var(--bg3); }
+    .feature-icon {
+      width: 44px; height: 44px; border-radius: 10px;
+      background: rgba(94,96,206,0.12); border: 1px solid rgba(94,96,206,0.2);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px;
+    }
+    .feature-icon svg { width: 20px; height: 20px; stroke: var(--primary); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .feature-icon.accent { background: rgba(6,174,213,0.1); border-color: rgba(6,174,213,0.2); }
+    .feature-icon.accent svg { stroke: var(--accent); }
+    .feature-icon.success { background: rgba(115,201,145,0.1); border-color: rgba(115,201,145,0.2); }
+    .feature-icon.success svg { stroke: var(--success); }
+    .feature-icon.warning { background: rgba(247,144,9,0.1); border-color: rgba(247,144,9,0.2); }
+    .feature-icon.warning svg { stroke: var(--warning); }
+    .feature-icon.purple { background: rgba(158,119,237,0.1); border-color: rgba(158,119,237,0.2); }
+    .feature-icon.purple svg { stroke: #9E77ED; }
+    .feature-title { font-size: 17px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 10px; }
+    .feature-desc { font-size: 14px; color: var(--text-2); line-height: 1.65; }
+    .feature-tag {
+      display: inline-block; margin-top: 14px;
+      font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--primary); background: rgba(94,96,206,0.1);
+      padding: 3px 8px; border-radius: 4px;
+    }
+    @media (max-width: 960px) {
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .features-grid { grid-template-columns: 1fr; }
+    }

@@ -1,0 +1,34 @@
+/* ─── PRODUCT TOUR ──────────────────────────── */
+    .tour { padding: 96px 24px; }
+    .tour-header { text-align: center; }
+    .tour-tabs {
+      display: flex; gap: 6px;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 999px; padding: 4px;
+      width: fit-content; margin: 40px auto 0;
+    }
+    .tour-tab {
+      padding: 9px 24px; border-radius: 999px;
+      font-size: 14px; font-weight: 500;
+      color: var(--text-2); cursor: pointer;
+      border: none; background: transparent;
+      transition: all 0.2s;
+    }
+    .tour-tab.active {
+      background: var(--primary); color: #fff;
+      box-shadow: 0 4px 16px rgba(94,96,206,0.4);
+    }
+    .tour-tab:not(.active):hover { color: var(--text); background: rgba(255,255,255,0.05); }
+    .tour-screens { margin-top: 40px; position: relative; }
+    .tour-screen {
+      display: none;
+      animation: fadeTab 0.35s ease;
+    }
+    .tour-screen.active { display: block; }
+    @keyframes fadeTab { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+    .tour-caption {
+      text-align: center; margin-top: 24px;
+    }
+    .tour-caption h3 { font-size: 18px; font-weight: 700; }
+    .tour-caption p { font-size: 14px; color: var(--text-2); margin-top: 6px; }
